@@ -1,0 +1,4 @@
+porto=6777
+ruta=www/ficheiro
+extension=html,txt,jpg,gif
+error404=nonatopado.html
