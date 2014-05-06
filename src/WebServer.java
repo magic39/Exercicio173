@@ -50,7 +50,8 @@ public class WebServer
                         fileName = fileName.substring(1);
                     // ler o contido do ficheiro solicitado
                         File file = new File(fileName);
-                if (file.exists()) {
+                
+                    if (file.exists()) {
                     // converter o ficheiro nun array de bytes
                     int numOfBytes = (int) file.length();
                     FileInputStream inFile = new FileInputStream (fileName);
@@ -93,6 +94,8 @@ public class WebServer
                 System.out.println (requestMessageLine);
 
                 connectionSocket.close();
+                }else{
+                        System.out.println("Extension non valida");
                 }
             } else {
                 System.out.println ("Petición incorrecta");
